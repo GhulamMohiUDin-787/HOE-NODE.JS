@@ -19,3 +19,17 @@ setTimeout(
     return(a+b);
  }
  console.log(sum(a, b));
+ //
+ (function(){
+    console.log("this is immediate invokedd function");
+ })();
+ //
+ ((function sum (a,b){
+    return(a+b);
+     
+ })(5,3));
+//
+console.log((function (a, b) {
+  return a + b;
+})(5, 3)); 
+//
