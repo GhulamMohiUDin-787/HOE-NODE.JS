@@ -36,3 +36,7 @@ console.log(house.supervisor)
  for (let key in house.supervisor){
     console.log(key,house.supervisor[key])
  }
+ house.supervisor.age = 24;
+house.supervisor.location = "Gulberg Greens";
+ 
+ console.log(house.supervisor)
