@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="s1" id="s-1">First student name:Ghulam Mohi u Din</p>
+    <p class="s2" id="s-2">First student name: Ali Abbas </p>
+    <p class="s3" id="s-3">First student name: Laiba</p>
+    <p class="s4" id="s-4">First student name: mariam</p>
+    <p class="s5" id="s-5">First student name: wajih </p>
+
+
+    <p class="s"  >First student name:Ghulam Mohi u Din</p>
+    <p class="s"  >First student name: Ali Abbas </p>
+    <p class="s"  >First student name: Laiba</p>
+    <p class="s"  >First student name: mariam</p>
+    <p class="s"  >First student name: wajih </p>
+
+    <p class="se"  >First student name:Ghulam Mohi u Din</p>
+    <p class="se"  >First student name: Ali Abbas </p>
+    <p class="se" id="se1"  >First student name: Laiba</p>
+    <p class="se"  >First student name: mariam</p>
+    <p class="se"  >First student name: wajih </p>
+<script>
+    let element = document.getElementsByClassName('s1');
+    console.log(element[0].textContent)
+    let student=document.getElementById('s-3')
+    console.log(student.textContent)
+let element1 = document.getElementsByClassName('s');
+for (let i = 0; i < element1.length; i++) {
+    element1[i].style.color = "violet";
+}
+console.log(element1)
+let element12 = document.getElementsByClassName('se');
+for (let i = 0; i < element12.length; i++) {
+    element12[i].style.fontSize = "32px";
+}
+document.getElementById('se1').style.color = "green";
+    console.log(element12);
+</script>
+</body>
+</html>

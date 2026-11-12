@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <div class="login-box" style="text-align: center;">
+    <h2>Login Form :</h2>
+    <input type="email" id="email" placeholder="Email">
+    <br> 
+    <input type="password" id="password" placeholder="Password">
+    <br>
+    <button id="loginBtn">Login</button>
+  </div>
+  <script>
+    function login() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    console.log("Email:", email);
+    console.log("Password:", password);
+    alert("Login clicked");
+    }
+    document.getElementById("loginBtn").addEventListener("click", login);
+  </script>
+</body>
+</html>
